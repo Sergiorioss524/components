@@ -1,11 +1,11 @@
-'use client'
 import React, { useState } from 'react';
 
 interface FlipCardProps {
     frontImage: string;
     backImage: string;
 }
-const FlipCard = ({ frontImage, backImage }) => {
+
+const FlipCard: React.FC<FlipCardProps> = ({ frontImage, backImage }) => {
     const [isFlipped, setIsFlipped] = useState(false);
 
     const handleClick = () => {
