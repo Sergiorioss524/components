@@ -6,8 +6,8 @@ export default function Home() {
     return (
         <main>
         <div className="flex justify-center items-center py-20" style={{ display: 'flex', flexDirection: 'row' }}>
-            <FlipCard frontImage="/card1.webp" backImage="/card2.webp"/>
-            <FlipCard frontImage="/card1.webp" backImage="/card2.webp"/>
+            <FlipCard frontImage="/card1.jpg" backImage="/card2.jpg"/>
+            <FlipCard frontImage="/card1.jpg" backImage="/card2.jpg"/>
 
         </div>
             <section>
