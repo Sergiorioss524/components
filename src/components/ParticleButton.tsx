@@ -25,7 +25,7 @@ const ParticleButton: React.FC<ParticleButtonProps> = ({
         );
         setParticles(newParticles);
 
-        // Clear particles after animation duration
+
         setTimeout(() => {
             setParticles([]);
         }, 1500);

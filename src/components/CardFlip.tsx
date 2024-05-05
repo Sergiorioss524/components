@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 interface FlipCardProps {
     frontImage: string;
@@ -25,13 +26,13 @@ const FlipCard: React.FC<FlipCardProps> = ({ frontImage, backImage }) => {
                 }}
             >
                 <div className="absolute flex justify-center items-center w-full h-full bg-blue-500 text-white" style={{ backfaceVisibility: 'hidden' }}>
-                    <img src={frontImage} alt="Front of card" className="w-full h-full object-cover"/>
+                    <Image src={frontImage} alt="Front of card" layout="fill" objectFit="cover"/>
                 </div>
                 <div className="absolute flex justify-center items-center w-full h-full bg-red-500 text-white" style={{
                     backfaceVisibility: 'hidden',
                     transform: 'rotateY(180deg)'
                 }}>
-                    <img src={backImage} alt="Back of card" className="w-full h-full object-cover"/>
+                    <Image src={backImage} alt="Back of card" layout="fill" objectFit="cover"/>
                 </div>
             </div>
         </div>
